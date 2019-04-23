@@ -1,33 +1,94 @@
-.App {
-  text-align: center;
+.App{
+  width: 100vw;
+  height:100vh;
+  margin: 0;
+  background-image: url(header-bg.jpg);
+  background-position: center;
+
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  
+  /* text-align: right; */
+  height: 70px;
+  line-height: 70px;
+  background-color: black;
+ 
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav h1 {
+  
+  float:left;
+  margin-top: 0;
+  margin-left: 150px;
+  color:yellow;
+}
+
+.menu {
+    margin: 0 70px 0 0;
+    
+    float: right;
+    
+    
+    
+}
+
+.menu a {
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 60px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float:right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  label {
+    display:block;
+    cursor: pointer;
+    color: yellow;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu{
+    
+    text-align: center;
+    width: 80%;
+    display:none;
+  
+    
+    
+  }
+
+  .menu h1{
+    width: 30vw;
+   
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    background-color: black;
+
+    
+   
+  }
+  #toggle:checked + .menu  {
+    display: block;
+   
+   
   }
 }
